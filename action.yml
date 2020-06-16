@@ -1,0 +1,17 @@
+name: "PCF Control Info Action"
+description: "Get control name and version from the manifest file of the PCF control"
+inputs:
+  manifest-path:
+    description: "Path to the folder where the manifest file is located"
+    required: true
+outputs:
+  control-name:
+    description: "Name of the PCF control"
+  control-version:
+    description: "Version of the PCF control"
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: "info"
+  color: "purple"
